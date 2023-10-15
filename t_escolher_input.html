@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Dados Gráfico</title>
+    <link rel="stylesheet" href="styleg.css">
+</head>
+<body class="input">
+    <div class="formulario">
+        <h1 class="inserir">Insira informações para o seu gráfico:</h1>
+    <p class="obs">OBS: É opcional colocar um segundo dado para o gráfico</p>
+        <form>
+            <label for="título">Título:</label>
+            <input type="text" id="titulo" name="titulo_g" required>
+            <br>
+            
+            <label for="dado1">Dado 1 (nome da coluna):</label>
+            <input type="text" id="dado1" name="dado1" required>
+            <br>
+            
+            <label for="dado2">Dado 2 (nome da coluna):</label>
+            <input type="text" id="dado2" name="dado2">
+            
+            <p class="tipog">Escolha um tipo de gráfico:</p>
+            <select id="tipo_g" name="tipo_g" placeholder= 'Tipo de Gráfico'required>
+                <option value="barra">Barra</option>
+                <option value="pizza">Pizza</option>
+                <option value="coluna">Coluna</option>
+            </select>
+<!-- falta ir para outra página com o arquivo -->
+            <button id="enviarg" type="submit">Enviar</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("enviarg").addEventListener("click", function() {
+            window.location.href = "file:///C:/Users/User/Documents/3%C2%BA%20ano%20EM%202023%20CETEC/T%C3%A9cnico%20em%20Inform%C3%A1tica/Programa%C3%A7%C3%A3o%20II/Prog/Graficos/t_escolher_input.html";
+        });
+        
+    </script>
+</body>
+</html>
